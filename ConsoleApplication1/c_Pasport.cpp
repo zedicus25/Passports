@@ -144,3 +144,22 @@ void c_Pasport::setInn(int inn)
 		std::cout << "Error: " << str << "\n";
 	}
 }
+
+std::string c_Pasport::show()
+{
+	std::string res;
+	res = this->getName();
+	res += " ";
+	res += this->getLastName();
+	res += " ";
+	res += this->getPatronymic();
+	res += " ";
+	res += std::to_string(this->getDay());
+	res += " ";
+	res += std::to_string(this->getMounth());
+	res += " ";
+	res += std::to_string(this->getYear());
+	res += " ";
+	res += std::to_string(this->getInn());
+	return res;
+}

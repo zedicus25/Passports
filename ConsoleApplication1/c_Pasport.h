@@ -47,5 +47,9 @@ public:
 		return this->inn;
 	}
 
+	std::string show();
+		
+	
+
 };
 
